@@ -31,5 +31,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and Lint
-        run: turbo build lint
+      - name: Build
+        run: npm run build
+
+      - name: Lint
+        run: npm run lint
