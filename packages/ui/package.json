@@ -14,7 +14,6 @@
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
-    "@repo/biome-config": "*",
     "@repo/typescript-config": "*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
