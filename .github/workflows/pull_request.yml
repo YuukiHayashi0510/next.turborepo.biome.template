@@ -34,5 +34,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Run Lint
+
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+
+      - name: Run Biome
         run: npm run lint
