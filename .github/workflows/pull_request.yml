@@ -4,7 +4,7 @@ on:
   pull_request:
 
 env:
-  NODE_VERSION: 20
+  BIOME_VERSION: 1.9.3
 
 jobs:
   quality:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Biome
         uses: biomejs/setup-biome@v2
         with:
-          version: latest
+          version: ${{ env.BIOME_VERSION }}
 
       - name: Run Biome
         run: biome ci .
