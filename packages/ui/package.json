@@ -8,9 +8,9 @@
     "./code": "./src/code.tsx"
   },
   "scripts": {
-    "check": "biome check .",
-    "lint": "biome lint .",
-    "format": "biome format .",
+    "check": "npx @biomejs/biome check .",
+    "lint": "npx @biomejs/biome lint .",
+    "format": "npx @biomejs/biome format .",
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
