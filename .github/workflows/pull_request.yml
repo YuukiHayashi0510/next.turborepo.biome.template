@@ -19,4 +19,4 @@ jobs:
           version: ${{ env.BIOME_VERSION }}
 
       - name: Run Biome
-        run: biome ci .
+        run: biome ci . --config-path=biome.json
