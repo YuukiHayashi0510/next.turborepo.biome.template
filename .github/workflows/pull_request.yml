@@ -7,7 +7,7 @@ env:
   NODE_VERSION: 20
 
 jobs:
-  quality:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,7 +27,7 @@ jobs:
         with:
           version: latest
 
-      - name: Cache turbo build setup
+      - name: Cache turbo lint
         uses: actions/cache@v4
         with: 
           path: .turbo
@@ -35,8 +35,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-turbo-
 
-      - name: Build
-        run: npm run build
-
       - name: Lint
-        run: npx turbo run lint
+        run: npm run lint
