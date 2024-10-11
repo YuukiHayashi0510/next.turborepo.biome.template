@@ -68,7 +68,7 @@
   },
   "overrides": [
     {
-      "include": ["packages/ui/**", "apps/**/*.tsx", "apps/**/*.ts"],
+      "include": ["packages/ui/**", "apps/**/*.tsx", "apps/**/*.ts", "apps/**/*.css"],
       "linter": {
         "rules": {
           "correctness": {
